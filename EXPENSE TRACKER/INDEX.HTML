@@ -3,14 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense tracker</title>
+    <title>Expense Tracker Application</title>
 </head>
 <body>
- <h1>motor vehicle expense</h1> 
-    <h2>salaries to employees</h2> 
-    <h3> lighting and heating</h3>
-    <h4> return outwards</h4>
-    <h5> depreciation expense </h5>
-    <h6> any other expenses</h6>
+    <header>
+        <h1>Welcome to Expense Tracker</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Expense Tracker</h2>
+            <p>Expense Tracker helps you manage your finances efficiently.</p>
+        </section>
+
+        <section>
+            <h2>User Registration</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <input type="submit" value="Register">
+            </form>
+        </section>
+
+        <section>
+            <h2>User Information</h2>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>123-456-7890</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </table>
+        </section>
+
+        <section>
+            <h2>Sample Image</h2>
+            <img src="https://via.placeholder.com/400" alt="Sample Image" width="400">
+        </section>
+
+        <section>
+            <h2>External Link</h2>
+            <p>Visit <a href="https://google.com" target="_blank">Google</a></p>
+        </section>
+    </main>
 </body>
 </html>
+
